@@ -1,0 +1,50 @@
+[
+  {
+    "test_id": "login",
+    "name": "User Login",
+    "success": true,
+    "timestamp": "0001-01-01T00:00:00Z",
+    "response": {
+      "message": "Login Successfully",
+      "response": 200,
+      "result": {
+        "Branchcode": null,
+        "Errormsg": null,
+        "Fullname": "RIVA RAISSA AZ",
+        "IdentityUser": "2320233420230203D141243",
+        "Needresetpassword": "0",
+        "Phoneno": "01234567",
+        "Profileimg": null,
+        "Saltcode": "011b4fa62ad52676e869ea3a4c90b1cc",
+        "TokenID": "141243SANDIAWEB2025-03-18 17:58:11.053156818 +0000 UTC m=+1088794.105754393",
+        "Userappid": "64",
+        "Userappname": "User Aplikasi Super Admin Incentive System",
+        "Usergroupid": "54",
+        "Usergroupname": "User Group Super Admin Insentive System",
+        "Userid": "141243",
+        "Usertoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIzMjQyOTEsImlkZW50aXR5dXNlciI6IjIzMjAyMzM0MjAyMzAyMDNEMTQxMjQzIiwib3JpZ19pYXQiOjE3NDIzMjA2OTEsInRva2VuaWQiOiIxNDEyNDNTQU5ESUFXRUIyMDI1LTAzLTE4IDE3OjU4OjExLjA1MzE1NjgxOCArMDAwMCBVVEMgbT0rMTA4ODc5NC4xMDU3NTQzOTMiLCJ1c2VyaWQiOiIxNDEyNDMifQ.1ZgvRvyDxbCZ5QgLth2L66a-pXAvHUZeP4lp-NL94nU",
+        "Validations": 200
+      }
+    }
+  },
+  {
+    "test_id": "login",
+    "name": "User Login",
+    "success": false,
+    "error": "Expected status 400 but got 404",
+    "timestamp": "0001-01-01T00:00:00Z",
+    "response": {
+      "message": "Incorrect Username Or Password",
+      "response": 404,
+      "result": null
+    }
+  },
+  {
+    "test_id": "alfastatus",
+    "name": "Order Status Alfa",
+    "success": false,
+    "error": "Post \"http://localhost:2020/api/v1/beatrice-offline/private/status-order\": dial tcp [::1]:2020: connectex: No connection could be made because the target machine actively refused it.",
+    "timestamp": "0001-01-01T00:00:00Z",
+    "response": null
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "id": "login",
+    "name": "User Login",
+    "method": "POST",
+    "endpoint": "https://apidemo.baf.id/SalesPortal/user_management/Login",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": [
+      {
+        "Username": "riva.raissa@baf.id",
+        "Password": "Bussan100!",
+        "Ipaddress": "127.0.0.1"
+      },
+      {
+        "Username": "riva.raissa@baf.id",
+        "Password": "",
+        "Ipaddress": "127.0.0.1"
+      }
+    ],
+    "expect": [
+      {
+        "status": 200,
+        "body": {
+          "message": "Login Successfully",
+          "response": 200,
+          "result": {
+            "Branchcode": null,
+            "Errormsg": null,
+            "Fullname": "RIVA RAISSA AZ",
+            "IdentityUser": "2320233420230203D141243",
+            "Needresetpassword": "0",
+            "Phoneno": "01234567",
+            "Profileimg": null,
+            "Saltcode": "011b4fa62ad52676e869ea3a4c90b1cc",
+            "TokenID": "IGNORE",
+            "Userappid": "64",
+            "Userappname": "User Aplikasi Super Admin Incentive System",
+            "Usergroupid": "54",
+            "Usergroupname": "User Group Super Admin Insentive System",
+            "Userid": "141243",
+            "Usertoken": "IGNORE",
+            "Validations": 200
+          }
+        },
+        "ignore": ["result.Usertoken", "result.TokenID"]
+      },
+      {
+        "status": 400,
+        "body": {
+          "message": "Incorrect Username Or Password",
+          "response": 404,
+          "result": null
+        }
+      }
+    ],
+    "capture": ["result.Usertoken"]
+  },
+  {
+    "id": "alfastatus",
+    "name": "Order Status Alfa",
+    "depends_on": "login",
+    "method": "POST",
+    "endpoint": "http://localhost:2020/api/v1/beatrice-offline/private/status-order",
+    "headers": {
+      "Authorization": "Bearer $result.Usertoken",
+      "x-api-key": "9515328e-d485-4d3e-b0e3-7bf20be04926"
+    },
+    "body": [
+      {
+        "Appno": "",
+        "Nik": "",
+        "Fullname": "Resti Rusvitaningrum"
+      }
+    ],
+    "expect": [
+      {
+        "status": 200,
+        "body": {
+          "JumlahData": "IGNORE",
+          "StatusLoad": 400,
+          "StatusDb": 200,
+          "StatusQuery": 200,
+          "Result": [
+            {
+              "DEST_ID": "IGNORE",
+              "ORDER_NO": "IGNORE",
+              "FULLNAME": "IGNORE",
+              "IDNO": "IGNORE",
+              "APP_SOURCE": "IGNORE",
+              "DTM_CRT": "IGNORE",
+              "DTM_UPD": "IGNORE",
+              "ORDER_STAT": "IGNORE",
+              "is_approved": "IGNORE",
+              "NOTES": "IGNORE"
+            }
+          ]
+        },
+        "ignore": ["JumlahData", "Result.*"]
+      }
+    ]
+  }
+]

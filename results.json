@@ -1,0 +1,140 @@
+[
+  {
+    "test_id": "login",
+    "name": "User Login",
+    "success": true,
+    "timestamp": "0001-01-01T00:00:00Z",
+    "response": {
+      "message": "Login Successfully",
+      "response": 200,
+      "result": {
+        "Branchcode": null,
+        "Errormsg": null,
+        "Fullname": "RIVA RAISSA AZ",
+        "IdentityUser": "2320233420230203D141243",
+        "Needresetpassword": "0",
+        "Phoneno": "01234567",
+        "Profileimg": null,
+        "Saltcode": "011b4fa62ad52676e869ea3a4c90b1cc",
+        "TokenID": "141243SANDIAWEB2025-03-18 04:46:16.657146928 +0000 UTC m=+1041279.709744508",
+        "Userappid": "64",
+        "Userappname": "User Aplikasi Super Admin Incentive System",
+        "Usergroupid": "54",
+        "Usergroupname": "User Group Super Admin Insentive System",
+        "Userid": "141243",
+        "Usertoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDIyNzY3NzYsImlkZW50aXR5dXNlciI6IjIzMjAyMzM0MjAyMzAyMDNEMTQxMjQzIiwib3JpZ19pYXQiOjE3NDIyNzMxNzYsInRva2VuaWQiOiIxNDEyNDNTQU5ESUFXRUIyMDI1LTAzLTE4IDA0OjQ2OjE2LjY1NzE0NjkyOCArMDAwMCBVVEMgbT0rMTA0MTI3OS43MDk3NDQ1MDgiLCJ1c2VyaWQiOiIxNDEyNDMifQ.qb__pGvL1H0cDPzACbgc0EoTU-f6zux19CsebT7uUHA",
+        "Validations": 200
+      }
+    }
+  },
+  {
+    "test_id": "alfastatus",
+    "name": "Order Status Alfa",
+    "success": true,
+    "timestamp": "0001-01-01T00:00:00Z",
+    "response": {
+      "JumlahData": 8,
+      "Result": [
+        {
+          "APP_SOURCE": "0",
+          "DEST_ID": "889NMP04032500133",
+          "DTM_CRT": "2025-03-04T15:06:05.41Z",
+          "DTM_UPD": "2025-03-04T16:23:47.75Z",
+          "FULLNAME": "Resti Rusvitaningrum",
+          "IDNO": "5546499988888884",
+          "NOTES": "Batal-Cancelled By Branch",
+          "ORDER_NO": "BAFNMP2025030048852",
+          "ORDER_STAT": "18",
+          "is_approved": "10"
+        },
+        {
+          "APP_SOURCE": "0",
+          "DEST_ID": "889NMP05032500009",
+          "DTM_CRT": "2025-03-05T09:29:24.617Z",
+          "DTM_UPD": "2025-03-06T16:55:06.773Z",
+          "FULLNAME": "Resti Rusvitaningrum",
+          "IDNO": "5546499988888884",
+          "NOTES": "Go Live",
+          "ORDER_NO": "BAFNMP2025030048963",
+          "ORDER_STAT": "21",
+          "is_approved": "12"
+        },
+        {
+          "APP_SOURCE": "0",
+          "DEST_ID": "889NMP13032500045",
+          "DTM_CRT": "2025-03-13T15:17:57.67Z",
+          "DTM_UPD": "2025-03-13T15:26:07.103Z",
+          "FULLNAME": "RESTI RUSVITANINGRUM ",
+          "IDNO": "5546499988888884",
+          "NOTES": "Batal-Cancel By System",
+          "ORDER_NO": "BAFNMP2025030049409",
+          "ORDER_STAT": "18",
+          "is_approved": "10"
+        },
+        {
+          "APP_SOURCE": "0",
+          "DEST_ID": "889NMP13032500047",
+          "DTM_CRT": "2025-03-13T15:34:23.597Z",
+          "DTM_UPD": "2025-03-14T11:44:18.047Z",
+          "FULLNAME": "RESTI RUSVITANINGRUM ",
+          "IDNO": "5546499988888884",
+          "NOTES": "Batal-Cancel By System",
+          "ORDER_NO": "BAFNMP2025030049411",
+          "ORDER_STAT": "18",
+          "is_approved": "10"
+        },
+        {
+          "APP_SOURCE": "0",
+          "DEST_ID": "889NMP14032500023",
+          "DTM_CRT": "2025-03-14T14:13:22.36Z",
+          "DTM_UPD": "2025-03-14T14:15:28.15Z",
+          "FULLNAME": "RESTI RUSVITANINGRUM ",
+          "IDNO": "5546499988888884",
+          "NOTES": "Approve E-Sign",
+          "ORDER_NO": "BAFNMP2025030049429",
+          "ORDER_STAT": "23",
+          "is_approved": "14"
+        },
+        {
+          "APP_SOURCE": "0",
+          "DEST_ID": "889NMP17032500037",
+          "DTM_CRT": "2025-03-17T14:42:55.343Z",
+          "DTM_UPD": "2025-03-17T14:48:16.14Z",
+          "FULLNAME": "RESTI RUSVITANINGRUM ",
+          "IDNO": "5546499988888884",
+          "NOTES": "Proses GoLive",
+          "ORDER_NO": "BAFNMP2025030049452",
+          "ORDER_STAT": "21",
+          "is_approved": "12"
+        },
+        {
+          "APP_SOURCE": "0",
+          "DEST_ID": "889NMP18032500012",
+          "DTM_CRT": "2025-03-18T11:10:58.843Z",
+          "DTM_UPD": "2025-03-18T11:11:01.25Z",
+          "FULLNAME": "RESTI RUSVITANINGRUM ",
+          "IDNO": "5546499988888884",
+          "NOTES": "-",
+          "ORDER_NO": "BAFNMP2025030049497",
+          "ORDER_STAT": "2",
+          "is_approved": "0"
+        },
+        {
+          "APP_SOURCE": "0",
+          "DEST_ID": "889NMP18032500017",
+          "DTM_CRT": "2025-03-18T11:26:34.453Z",
+          "DTM_UPD": "2025-03-18T11:26:34.797Z",
+          "FULLNAME": "RESTI RUSVITANINGRUM ",
+          "IDNO": "5546499988888884",
+          "NOTES": "-",
+          "ORDER_NO": "BAFNMP2025030049498",
+          "ORDER_STAT": "2",
+          "is_approved": "0"
+        }
+      ],
+      "StatusDb": 200,
+      "StatusLoad": 200,
+      "StatusQuery": 200
+    }
+  }
+]

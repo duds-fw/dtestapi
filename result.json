@@ -1,0 +1,20 @@
+{
+  "message": "Login Successfully",
+  "response": 200,
+  "result": {
+    "Branchcode": null,
+    "Errormsg": null,
+    "Fullname": "RIVA RAISSA AZ",
+    "IdentityUser": "2320233420230203D141243",
+    "Needresetpassword": "0",
+    "Phoneno": "01234567",
+    "Profileimg": null,
+    "Saltcode": "011b4fa62ad52676e869ea3a4c90b1cc",
+    "Userappid": "64",
+    "Userappname": "User Aplikasi Super Admin Incentive System",
+    "Usergroupid": "54",
+    "Usergroupname": "User Group Super Admin Insentive System",
+    "Userid": "141243",
+    "Validations": 200
+  }
+}
