@@ -20,19 +20,19 @@ jobs:
           go-version: '1.21'
 
       - name: Build for Linux
-        run: GOOS=linux GOARCH=amd64 go build -o badgercli-linux cmd/badgercli/main.go
+        run: GOOS=linux GOARCH=amd64 go build -o dtestapi-linux main.go
 
       - name: Build for macOS
-        run: GOOS=darwin GOARCH=amd64 go build -o badgercli-mac cmd/badgercli/main.go
+        run: GOOS=darwin GOARCH=amd64 go build -o dtestapi-mac main.go
 
       - name: Build for Windows
-        run: GOOS=windows GOARCH=amd64 go build -o badgercli-win.exe cmd/badgercli/main.go
+        run: GOOS=windows GOARCH=amd64 go build -o dtestapi-win.exe main.go
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            badgercli-linux
-            badgercli-mac
-            badgercli-win.exe
+            dtestapi-linux
+            dtestapi-mac
+            dtestapi-win.exe
           token: ${{ secrets.PAT_TOKEN }}
